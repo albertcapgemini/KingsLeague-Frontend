@@ -1,1 +1,28 @@
-<p>player-add works!</p>
+
+
+<div class="col-md-6">
+    <h2 class="text-center">Add Player</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+      <input type="text" [(ngModel)]="player.name" placeholder="Nombre" name="name" class="form-control" id="name">
+    </div>
+  
+    <div class="form-group">
+      <label for="firstName">Fecha nacimiento:</label>
+      <input [(ngModel)]="player.bornYear" placeholder="Fecha nacimiento" name="fechaNacimiento" class="form-control" id="fechaNacimiento">
+    </div>
+    <div class="form-group">
+        <label for="equipo">Equipo:</label>
+        <input [(ngModel)]="player.team" placeholder="Equipo" name="equipo" class="form-control" id="equipo">
+      </div>
+  
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input [(ngModel)]="player.foot" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+    </div>
+  
+    <button class="btn btn-success" (click)="createPlayer()">Create</button>
+    
+  </form>
+</div>

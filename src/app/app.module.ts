@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { PlayerAddComponent } from './component/player-add/player-add/player-add.component';
 import { PlayerListComponent } from './component/player-list/player-list/player-list.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { PlayerService } from './service/player/player.service';
+import { TeamService } from './service/team/team.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +19,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PlayerService,TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
