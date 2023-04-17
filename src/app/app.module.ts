@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlayerComponent } from './player/player/player.component';
-import { TeamComponent } from './team/team/team.component';
+import { PlayerAddComponent } from './component/player-add/player-add/player-add.component';
+import { PlayerListComponent } from './component/player-list/player-list/player-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayerComponent,
-    TeamComponent
+    PlayerAddComponent,
+    PlayerListComponent
   ],
   imports: [
     BrowserModule,
