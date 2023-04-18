@@ -9,12 +9,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { PlayerService } from './service/player/player.service';
 import { TeamService } from './service/team/team.service';
+import { TeamAddComponent } from './component/team-add/team-add/team-add.component';
+import { TeamListComponent } from './component/team-list/team-list/team-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerAddComponent,
-    PlayerListComponent
+    PlayerListComponent,
+    TeamAddComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,

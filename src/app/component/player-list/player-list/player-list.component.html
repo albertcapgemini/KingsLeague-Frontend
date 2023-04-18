@@ -1,9 +1,8 @@
+<div class="col-md-6 hola">
+  <h2> Listado Jugadores</h2>
 
-<div class="col-md-6">
-    <h2> Listado Jugadores</h2>
-    
-    <table class="table table-striped">
-      <thead>
+  <table class="table table-striped table-player">
+    <thead>
       <tr>
         <th class="hidden">Id</th>
         <th>Nombre</th>
@@ -11,8 +10,8 @@
         <th>Pie</th>
         <th>ID</th>
       </tr>
-      </thead>
-      <tbody>
+    </thead>
+    <tbody>
       <tr *ngFor="let pl of player">
         <td class="hidden">{{pl.id}}</td>
         <td>{{pl.name}}</td>
@@ -22,6 +21,6 @@
         <td><button class="btn btn-danger" (click)="deletePlayer(pl)"> Delete Player</button></td>
         <td><button (click)="editPlayer(pl)"></button> </td>
       </tr>
-      </tbody>
-    </table>
-    </div> 
+    </tbody>
+  </table>
+</div>
