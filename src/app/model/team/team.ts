@@ -1,13 +1,12 @@
 export class Team {
-    id: string;
-    name:string;
-    foundationYear:string;
-    presidente: string;
+    id: number;
+    president: string;
+    yearFoundation: number;
 
-    constructor(){
-        this.id = "";
-        this.name = "";
-        this.foundationYear = "";
-        this.presidente = "";
+    constructor() {
+        this.id = 1;
+        this.president = "";
+        this.yearFoundation = 1903;
     }
+
 }
