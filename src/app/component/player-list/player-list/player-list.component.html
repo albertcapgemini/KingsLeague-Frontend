@@ -1,4 +1,4 @@
-<!--<p>player-list works!</p>
+
 <div class="col-md-6">
     <h2> Listado Jugadores</h2>
     
@@ -9,19 +9,19 @@
         <th>Nombre</th>
         <th>Año de nacimiento</th>
         <th>Pie</th>
-        <th>Equipo</th>
+        <th>ID</th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let user of users">
-        <td class="hidden">{{user.id}}</td>
-        <td>{{user.firstName}}</td>
-        <td>{{user.lastName}}</td>
-        <td>{{user.email}}</td>
-        <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
+      <tr *ngFor="let pl of player">
+        <td class="hidden">{{pl.id}}</td>
+        <td>{{pl.name}}</td>
+        <td>{{pl.foot}}</td>
+        <td>{{pl.bornYear}}</td>
+        <td>{{pl.id}}</td>
+        <td><button class="btn btn-danger" (click)="deletePlayer(pl)"> Delete Player</button></td>
+        <td><button (click)="editPlayer(pl)"></button> </td>
       </tr>
       </tbody>
     </table>
-    </div>
-
--->
+    </div> 
