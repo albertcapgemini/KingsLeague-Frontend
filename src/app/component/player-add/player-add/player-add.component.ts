@@ -19,7 +19,6 @@ export class PlayerAddComponent {
         .subscribe(data => {
           alert("Usuario generado de forma correcta.");
         });
-  
     };
 
 }
